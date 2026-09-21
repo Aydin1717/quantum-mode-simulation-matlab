@@ -1,2 +1,8 @@
 Title: High-Density Kagome Superconductor Platform for Fault-Tolerant Majorana Zero Mode Hosting 
 Abstract: Y(Nb0.97 Ir 0.03)6 Sn5.97 Bi0.03 is the proposed formula for an alloy that can theoretically host Majorana Modes, due to the combination of unconventional superconductivity and non-trivial topology. While the parent alloy(YNb6Sn6) has shown Dirac Fermions forming in the corners of the Kagome Crystal(K points), moreover unconventional superconductivity of the Niobium d orbitals was present in the alloy. Niobium’s native Spin Orbit Coupling is weak and forms a topological gap with around Tc = 1.17K, given that thermal fluctuations (0.086 meV at 1 Kelvin) and disorder can cause quasiparticle poisoning. Heavy dopants like Ir and Bi are aimed to raise the gap and SOC to make the alloy perform non-trivial topology
+DFT code: Quantum ESPRESSO (v6.3) done in Mat3ra
+Calculations: Variable Cell Relaxatiom Structure, projected DOS, electronic band strucutre
+- `relax.out` / `pw.out`: The Quantum ESPRESSO output logs from Mat3ra.
+- `bands.dat` / `dos.dat`: Energy eigenvalues,  space paths, and density of states data points.
+- `analysis.m`: MATLAB script used to parse data, evaluate the ~12 meV Fermi level shift, and plot figures.
+  Note: AI was used for the work, including heavy calculations, parameter selection and simulatio setting
