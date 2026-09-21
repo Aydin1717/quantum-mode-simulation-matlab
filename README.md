@@ -6,4 +6,4 @@ Calculations: Variable Cell Relaxatiom Structure, projected DOS, electronic band
 - `bands.dat` / `dos.dat`: Energy eigenvalues,  space paths, and density of states data points.
 - `analysis.m`: MATLAB script used to parse data, evaluate the ~12 meV Fermi level shift, and plot figures.
   
-  Note: AI was used for the work, including heavy calculations, parameter selection and simulatio setting
+  Note: AI was used for the work, including heavy calculations, parameter selection and simulation settings, while the underlying logic, material inputs were strictly defined by the author
