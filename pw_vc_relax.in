@@ -1,0 +1,59 @@
+&CONTROL
+    calculation = 'vc-relax'
+    title = ''
+    verbosity = 'low'
+    restart_mode = 'from_scratch'
+    wf_collect = .true.
+    tstress = .true.
+    tprnfor = .true.
+    outdir = '/cluster-101-home/ihbjiobhjiobhjj/data/ihbjiobhjiobhjj-default/new-job-jul-30-2026-16-16-pm-w9MSByQTsYgmLGSDx/outdir'
+    wfcdir = '/cluster-101-home/ihbjiobhjiobhjj/data/ihbjiobhjiobhjj-default/new-job-jul-30-2026-16-16-pm-w9MSByQTsYgmLGSDx/outdir'
+    prefix = '__prefix__'
+    pseudo_dir = '/cluster-101-home/ihbjiobhjiobhjj/data/ihbjiobhjiobhjj-default/new-job-jul-30-2026-16-16-pm-w9MSByQTsYgmLGSDx/pseudo'
+/
+&SYSTEM
+    ibrav = 0
+    nat = 13
+    ntyp = 3
+    ecutwfc = 40
+    ecutrho = 200
+    occupations = 'smearing'
+    degauss = 0.005
+/
+&ELECTRONS
+    diagonalization = 'david'
+    diago_david_ndim = 4
+    diago_full_acc = .true.
+    mixing_beta = 0.3
+    startingwfc = 'atomic+random'
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+Y 88.90585 y_pbe_gbrv_1.4.upf
+Nb 92.90638 nb_pbe_gbrv_1.0.upf
+Sn 118.71 sn_pbe_gbrv_1.4.upf
+
+ATOMIC_POSITIONS crystal
+Y      0.000000000    0.000000000    0.500000000
+Nb     0.500000000    0.000000000    0.250700000
+Nb     0.000000000    0.500000000    0.250700000
+Nb     0.500000000    0.500000000    0.250700000
+Nb     0.500000000    0.000000000    0.749300000
+Nb     0.000000000    0.500000000    0.749300000
+Nb     0.500000000    0.500000000    0.749300000
+Sn     0.000000000    0.000000000    0.170500000
+Sn     0.000000000    0.000000000    0.829500000
+Sn     0.666667000    0.333333000    0.000000000
+Sn     0.333333000    0.666667000    0.000000000
+Sn     0.666667000    0.333333000    0.500000000
+Sn     0.333333000    0.666667000    0.500000000
+
+CELL_PARAMETERS angstrom
+   5.749800000    0.000000000    0.000000000
+  -2.874900000    4.979472867    0.000000000
+   0.000000000    0.000000000    9.500300000
+K_POINTS automatic
+1 1 1 0 0 0 
